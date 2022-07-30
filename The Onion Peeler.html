@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<title>The Onion Peeler</title>
+<div style=" display: inline-block; background: rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: sans-serif; font-size: 21px; position: fixed; bottom: -1px; width: 90%; max-width: 700px; background: rgb(33, 33, 33); left: 50%; color: rgb(255, 255, 255); padding: 10px 15px 15px 180px; font-family: Karla, Verdana; transition: bottom 0.3s ease 0s; transform: translateX(-50%); box-sizing: border-box; z-index: 999;">
+    <div style="margin-bottom: 12px; font-size: 20px; line-height: 21px;"><span></span><span></span><span></span><br><span style="font-size: 19px;">The Onion Peeler</span></div>
+    <table style="display: table; position: relative; opacity: 1; transition: opacity 0.5s ease 0s;">
+        <tr>
+            <td><input type="text" name="search" id="search" required="" size="50" placeholder="Enter query" spellcheck="true" style="display: table-cell; width: 100%; float: left; border-radius: 3px; border: 0px; line-height: 28px; color: rgb(0, 0, 0); font-size: 14px; padding: 0px 8px; height: 28px;"></td>
+            <td><span style="display: table-cell; width: 1%; vertical-align: middle;"><button onclick="execute()" style="background: gold; color: rgb(17, 17, 17); border: 0px; padding: 4px 8px; border-radius: 3px; margin-left: 6px; font-weight: 400; font-size: 13px; line-height: 21px;">Enter</button></span></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    execute = function() {
+    var search = escape(document.getElementById('search').value);
+    if (search != null) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.write('<br>');
+    for (x in myObj.items) {
+    document.write('<font color="black">'+ myObj.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj.items[x].link +'" target="_blank">'+ myObj.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp1 = new XMLHttpRequest();
+    xmlhttp1.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj1 = JSON.parse(this.responseText);
+    for (x in myObj1.items) {
+    document.write('<font color="black">'+ myObj1.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj1.items[x].link +'" target="_blank">'+ myObj1.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp2 = new XMLHttpRequest();
+    xmlhttp2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj2 = JSON.parse(this.responseText);
+    for (x in myObj2.items) {
+    document.write('<font color="black">'+ myObj2.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj2.items[x].link +'" target="_blank">'+ myObj2.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp3 = new XMLHttpRequest();
+    xmlhttp3.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj3 = JSON.parse(this.responseText);
+    for (x in myObj3.items) {
+    document.write('<font color="black">'+ myObj3.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj3.items[x].link +'" target="_blank">'+ myObj3.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp4 = new XMLHttpRequest();
+    xmlhttp4.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj4 = JSON.parse(this.responseText);
+    for (x in myObj4.items) {
+    document.write('<font color="black">'+ myObj4.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj4.items[x].link +'" target="_blank">'+ myObj4.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp5 = new XMLHttpRequest();
+    xmlhttp5.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj5 = JSON.parse(this.responseText);
+    for (x in myObj5.items) {
+    document.write('<font color="black">'+ myObj5.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj5.items[x].link +'" target="_blank">'+ myObj5.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp6 = new XMLHttpRequest();
+    xmlhttp6.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj6 = JSON.parse(this.responseText);
+    for (x in myObj6.items) {
+    document.write('<font color="black">'+ myObj6.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj6.items[x].link +'" target="_blank">'+ myObj6.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp7 = new XMLHttpRequest();
+    xmlhttp7.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj7 = JSON.parse(this.responseText);
+    for (x in myObj7.items) {
+    document.write('<font color="black">'+ myObj7.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj7.items[x].link +'" target="_blank">'+ myObj7.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp8 = new XMLHttpRequest();
+    xmlhttp8.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj8 = JSON.parse(this.responseText);
+    for (x in myObj8.items) {
+    document.write('<font color="black">'+ myObj8.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj8.items[x].link +'" target="_blank">'+ myObj8.items[x].displayLink +'</a></font><br><br>');
+    }
+    var xmlhttp9 = new XMLHttpRequest();
+    xmlhttp9.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var myObj9 = JSON.parse(this.responseText);
+    for (x in myObj9.items) {
+    document.write('<font color="black">'+ myObj9.items[x].title +'</b><br>');
+    document.write('<a href="'+ myObj9.items[x].link +'" target="_blank">'+ myObj9.items[x].displayLink +'</a></font><br><br>');
+    }
+    document.write('</textarea></td></tr></table></center></div></body></html>');
+    }
+    };
+    xmlhttp9.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=91&alt=json", true);
+    xmlhttp9.send();
+    }
+    };
+    xmlhttp8.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=81&alt=json", true);
+    xmlhttp8.send();
+    }
+    };
+    xmlhttp7.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=71&alt=json", true);
+    xmlhttp7.send();
+    }
+    };
+    xmlhttp6.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=61&alt=json", true);
+    xmlhttp6.send();
+    }
+    };
+    xmlhttp5.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=51&alt=json", true);
+    xmlhttp5.send();
+    }
+    };
+    xmlhttp4.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=41&alt=json", true);
+    xmlhttp4.send();
+    }
+    };
+    xmlhttp3.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=31&alt=json", true);
+    xmlhttp3.send();
+    }
+    };
+    xmlhttp2.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=21&alt=json", true);
+    xmlhttp2.send();
+    }
+    };
+    xmlhttp1.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&start=11&alt=json", true);
+    xmlhttp1.send();
+    }
+    };
+    xmlhttp.open("GET", "https://www.googleapis.com/customsearch/v1?key=AIzaSyDQ5-e0uyArFRPWNo14TOXdYuEzhWbsuIE&cx=18ba4284cf9ba89bc&q="+search+"&alt=json", true);
+    xmlhttp.send();
+    }
+    document.write("</div></td></tr></table></center></html>");
+    }
+</script>
